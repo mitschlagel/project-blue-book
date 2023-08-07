@@ -1,4 +1,4 @@
-const isEven = x => {
+const isEven = (x: number): boolean => {
     if (x == 0) {
         return true
     } else if (x == 1) {

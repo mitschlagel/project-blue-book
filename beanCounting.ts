@@ -1,7 +1,7 @@
-const countBs = (x) => {
+const countBs = (x: string) => {
     let bCount = 0
-    x.split('').map(( x )=> {
-        if (x === "B") {
+    x.split('').map(( x: string )=> {
+        if (x == "B") {
             bCount++
         }
     })
