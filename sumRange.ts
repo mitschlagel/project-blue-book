@@ -15,3 +15,4 @@ function sum(array: number[]) {
 
 console.log(range(1, 10, 2))
 console.log(sum(range(1, 10)))
+console.log(range(1, 100, 5))
