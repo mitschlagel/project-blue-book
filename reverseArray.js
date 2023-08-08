@@ -1,5 +1,5 @@
 "use strict";
-var reverseArray = (array) => {
+const reverseArray = (array) => {
     let result = [];
     for (let i of array) {
         result.unshift(i);

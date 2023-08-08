@@ -26,3 +26,16 @@ let list = arrayToList([1, 2, 3]);
 let array = listToArray(list);
 console.log(list);
 console.log(array);
+function prepend(element, list) {
+    return { value: element, list: list };
+}
+console.log(JSON.stringify(prepend(0, list)));
+function nth(list, n) {
+    if (!list)
+        return undefined;
+    else if (n == 0)
+        return list.value;
+    else
+        return nth(list.rest, n - 1);
+}
+console.log(nth(list, 1));

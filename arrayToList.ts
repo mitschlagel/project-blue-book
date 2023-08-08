@@ -31,3 +31,20 @@ let array = listToArray(list)
 console.log(list)
 console.log(array)
 
+
+function prepend(element: number, list: any): {} {
+    return {value: element, list: list}
+}
+
+console.log(JSON.stringify(prepend(0, list)))
+
+function nth(list: any, n: number) {
+    if (!list)
+      return undefined;
+    else if (n == 0)
+      return list.value;
+    else
+      return nth(list.rest, n - 1);
+  }
+
+console.log(nth(list, 1))
