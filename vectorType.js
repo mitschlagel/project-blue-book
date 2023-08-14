@@ -20,7 +20,7 @@ class Vec {
         return Math.sqrt((this.x - 0) ** 2 + (this.y - 0) ** 2);
     }
 }
-const point = new Vec(0, 0);
+const point = new Vec();
 console.log(point.getCoord());
 point.plus(3, 3);
 console.log(point.getCoord());
